@@ -1,7 +1,6 @@
 let button = document.querySelector("#weerver");
 let slide = document.querySelector(".slide");
 let sunny = document.querySelector(".sunny");
-// let mooiweer = document.querySelector(".mooiweer")
 
 button.addEventListener('click', veranderen)
 function veranderen(){
