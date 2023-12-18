@@ -1,0 +1,235 @@
+:root{
+    --primaire: #7faec5;
+    --secundaire: #4ecd5d;
+    --maincolor: #384b61;
+    --padding: 25px;
+    --max: 60rem;
+    --margin: 0 auto;
+    --body-font: 'Open Sans', sans-serif;
+    --navbarletter: 30px;
+
+}
+body {
+    margin:0;
+    padding: 0;
+}
+/* NAV BEGIN */
+nav {
+    display: flex;
+    justify-content: space-between; /* This will push the logo to the right */
+    align-items: center; /* Vertically center the logo and navigation items */
+    padding: 10px; /* Add padding as needed */
+
+    background-color: rgb(250, 248, 248);
+
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    z-index: 100;
+    box-shadow: -1px 0 56px var(--primaire);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    box-sizing: content-box;
+    display: flex;
+    padding-block: 10px 20px;
+    font-size: var(--navbarletter);
+    color: var(--maincolor);
+
+}
+.contact{
+    border-radius: 10px;
+    background-color: var(--secundaire);
+    height: 70px;
+    width: 120px;
+    font-size: var(--navbarletter);
+    border-color: #fafafa;
+
+}
+/* NAV EINDE */
+
+/* VOORPAGINA BEGIN */
+
+main{
+    position: relative;
+}
+
+section {
+    height:100vh;
+    
+    position: relative;
+}
+
+
+section:nth-of-type(1) {
+    justify-content: left center;
+    align-items: center;
+    position: relative;
+}
+
+
+.begintitle, .scroll{
+    position: absolute;
+    z-index: 5;
+    font-style: Arial;
+ }
+
+ 
+ .scroll{
+    color: var(--secundaire);
+    top: 15em;
+    left: 25%;
+    font-size: 24px;
+ }
+
+
+
+.begintitle{   
+    align-items: center;
+    top: 7.5em;
+    left: 25%;
+    font-size: 40px;
+    color: var(--maincolor);
+    text-shadow: 0 0 3em #446874;
+}
+
+.mainstad{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center bottom;
+    z-index: 1;
+    opacity: 5;
+    background-image: url(/Schetsen/achtergrond.png);
+}
+
+.slide{
+    z-index: 3;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    
+}
+
+.sunny{
+    position: fixed;
+    z-index: 3;
+    right: -10em;
+    top: 0em;
+    width: 25%;
+    overflow:hidden;    
+    
+}
+#weerver{
+    position: absolute;
+    z-index: 7;
+    bottom: 3em;
+    background-color: var(--secundaire);
+    border-radius: 10px;
+    left: 5em;
+    width: 5%;
+    height: 5%;
+    font-size: x-large;
+}
+
+.mooiweer{ 
+    visibility: hidden;
+    
+
+}
+
+/* VOORPAGINA EIND */
+
+
+    
+
+.grond{
+    width:100%;
+    height: 35em;
+    position: relative;
+    
+
+}
+h2{
+    text-align: center;
+    color: #7Faec5;
+}
+p{
+
+    text-align: center;
+    color: #446874
+    
+}
+
+.introductie{
+
+    text-align: center;
+    justify-content: center;
+    font-size:  x-large;
+    padding: var(--padding);   
+    max-width: var(--max);
+    margin: var(--margin);
+}
+.barrel{
+    width: 50em;
+    font-size: xx-small;
+}
+
+.wat{
+    text-align: center;
+    font-size:  x-large;
+    padding: var(--padding);
+    max-width: var(--max);
+    margin: var(--margin)
+}
+
+.waarom{
+    text-align: center;
+    font-size:  x-large;
+    padding: var(--padding);
+    max-width: var(--max);
+    margin: var(--margin);
+    
+}
+.app{
+    /* text-align: center; */
+    flex-wrap: wrap;
+    font-size: x-large;
+    padding: var(--padding);  
+    max-width: var(--max);
+    margin: var(--margin);
+}
+
+
+.A, .B, .C, .D{
+    font-style: var(--body-font);
+}
+
+.B{
+    background-color: #fafafa;
+    width: 100%;
+}
+
+.D{
+    background-color: #fafafa;
+}
+
+.userstory{
+    margin-top: 5em;
+    text-align: center;
+    color: var(--maincolor);
+    font-size: 2.0em;
+    font-style: sans-serif;
+}
